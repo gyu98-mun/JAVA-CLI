@@ -12,4 +12,10 @@ public class Article {
         this.content = content;
         this.regDate = regDate;
     }
+    
+    @Override
+	public String toString() { //toString 메소드 오버라이딩
+		return id + ":" + title + ":" + content + ":" + regDate;
+	}
+    
 }
